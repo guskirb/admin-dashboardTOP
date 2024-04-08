@@ -12,9 +12,9 @@
 
 :root {
   --background-color: #ffffff;
-  --accent-color: #008cff;
+  --accent-color: #222831;
   --neutral-color: #ffffff;
-  --border-color: #ffe600;
+  --border-color: #00adb5;
 }
 
 body {
@@ -26,11 +26,7 @@ body {
   grid-template-columns: minmax(280px, 1fr) 5fr;
   grid-template-rows: minmax(150px, 1fr) 4fr;
   gap: 10px;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(230, 230, 230),
-    rgba(121, 255, 248, 0.459)
-  );
+  background-image: linear-gradient(to bottom right, #e7f6f2, #a5c9ca);
 }
 
 /* HEADER */
@@ -132,9 +128,11 @@ body {
   height: 40px;
   border-radius: 20px;
   border: none;
-  background-color: var(--accent-color);
+  background-color: var(--border-color);
   color: var(--neutral-color);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .headerButtons button:active {
@@ -207,8 +205,8 @@ main {
   grid-template-rows: 1fr 4fr;
 }
 
-.announcements div,
-.trending div {
+.announcements > div,
+.trending > div {
   border-radius: 20px;
   background-color: var(--neutral-color);
   padding: 20px;
